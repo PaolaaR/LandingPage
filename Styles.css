@@ -22,7 +22,7 @@ header, main {
 .img-principal {
     max-width: 100%;
     max-height: min-content;
-    height: auto;
+    height: 100%;
     width: 100%;
     border-radius:30px;
     border: solid 1px green;
@@ -33,7 +33,7 @@ header, main {
     text-align: center;
     font-weight: 100%;
     font-family:'Bruno Ace SC', cursive;
-    text-shadow: 7px 4px 5px lawngreen;
+    text-shadow: 7px 7px 7px green;
 }
 
 .card-text {
@@ -50,11 +50,15 @@ header, main {
 
 .containerS1 {
     background-color: lightgreen;
-    border: 1px solid black;
-    margin: 50px 20px 50px 20px;
+   width: 100%;
+    margin: 50px 0px 50px 0px;
     text-align: left;
-    padding: 90px;
+    padding: 80px;
     font-family:'Bruno Ace SC', cursive;
+    
+}
+.containerS1 h1{
+    text-shadow: 2px 2px 2px green;
 }
 
 .containerBox {
@@ -67,7 +71,7 @@ header, main {
 .containerBox div {
     padding: 40px;
     border: dashed 15px rgb(90, 182, 17);
-    background-color: whitesmoke;
+    background-color: rgba(236, 240, 241);
     width: 100%;   
 }
 
@@ -85,19 +89,18 @@ header, main {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: lightgreen;
-    border: 1px solid black;
     justify-content: space-evenly;
 }
 
 .footer-columns div {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 60px;
 }
 
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 425px){
     .card-title{
         font-size: 3rem;
     }
@@ -107,17 +110,29 @@ header, main {
         grid-template-columns: repeat(auto-fit, minmax (10px, 1fr));
         justify-content:center;
     }
-    
+    .containerS1 h1{
+        text-shadow: 2px 2px 2px green;
+    }
     .containerBox div {
         padding: 40px;
-        border: dashed 10px rgb(90, 182, 17);
-        background-color: whitesmoke;
+        border: dashed 8px rgb(90, 182, 17);
+        background-color: rgba(236, 240, 241);
         align-items: center;
-        width: 90%;   
+        width: 100%;   
     }
-    
     .img-fluid{
-        margin-top: 18px;
+        border: dotted 7px greenyellow; 
+        margin-right: 15px; 
+        margin-left: 3px;
+        margin-top: 20px;
+    }
+    .footer-columns{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
     }
 }
+
+
 
