@@ -1,3 +1,2 @@
-# LandingPage
-Proyecto 1 Bootcamp Desarrollo Web Fullstack UDD : Landing Page sobre clases de inglés
-Realizada con HTML y CSS
+Integración Api de pagos Khipu a plan basic landing page
+Postulación para rol de Customer Success Manager con enfoque técnico en Khipu
